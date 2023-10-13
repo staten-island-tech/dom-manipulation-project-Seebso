@@ -1,4 +1,4 @@
-DOMSelectors = {
+/* DOMSelectors = {
     // store all related code for selecting elements here
         form: document.querySelector("#form"),
         firstname: document.querySelector(".first-name"),
@@ -9,5 +9,5 @@ DOMSelectors = {
       event.preventDefault();
         DOMSelectors.h2s.forEach((header)=> header.textContent = DOMSelectors.firstname.value
         );
-    });
+    }); */
     /* console.log(DOMSelectors.firstname.value */
