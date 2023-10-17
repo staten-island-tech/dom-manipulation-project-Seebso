@@ -11,3 +11,6 @@
         );
     }); */
     /* console.log(DOMSelectors.firstname.value */
+const DOMSelectors = {
+  
+}
