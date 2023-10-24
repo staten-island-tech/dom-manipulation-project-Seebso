@@ -12,5 +12,14 @@
     }); */
     /* console.log(DOMSelectors.firstname.value */
 const DOMSelectors = {
-  
+  button: document.getElementById("btn"),
+  text: document.querySelector("#text"),
+  points: document.querySelectorAll(".point"),
+  box: document.getElementById("an"),
+};
+function ayo(text) {
+    text.textContent = "ayo";
 }
+DOMSelectors.button.addEventListener("click", function(){
+    ayo(DOMSelectors.text);
+})
