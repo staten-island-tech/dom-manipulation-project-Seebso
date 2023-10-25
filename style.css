@@ -1,0 +1,12 @@
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    height: 50vh;
+    width: 40vh;
+    margin: 2.5rem 0;
+    background-color: #cb8edd;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}

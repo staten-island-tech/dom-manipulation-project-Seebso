@@ -16,9 +16,11 @@ const DOMSelectors = {
   text: document.querySelector("#text"),
   points: document.querySelectorAll(".point"),
   box: document.getElementById("an"),
+  stuff: document.getElementById("firstname")
 };
-function ayo(text) {
-    text.textContent = "ayo";
+function ayo() {
+    inf = document.getElementById(formfirst)
+    text.textContent(inf)
 }
 DOMSelectors.button.addEventListener("click", function(){
     ayo(DOMSelectors.text);
