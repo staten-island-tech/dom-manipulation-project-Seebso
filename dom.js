@@ -15,13 +15,12 @@ const DOMSelectors = {
   button: document.getElementById("btn"),
   text: document.querySelector("#text"),
   points: document.querySelectorAll(".point"),
-  box: document.getElementById("an"),
-  stuff: document.getElementById("firstname")
+  card: document.getElementById("an"),
+  stuff: document.getElementById("firstname"),
+  formfirst: document.querySelector(`#formfirst`),
 };
-function ayo() {
-    inf = document.getElementById(formfirst)
-    text.textContent(inf)
-}
-DOMSelectors.button.addEventListener("click", function(){
-    ayo(DOMSelectors.text);
+
+DOMSelectors.button.addEventListener("click", function () {
+    let input = DOMSelectors.formfirst.value;
+    DOMSelectors.card.insertAdjacentHTML("afterend", `<p> ${input}</p>`);
 })
