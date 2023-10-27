@@ -21,6 +21,8 @@ const DOMSelectors = {
 };
 
 DOMSelectors.button.addEventListener("click", function () {
+    
     let input = DOMSelectors.formfirst.value;
-    DOMSelectors.card.insertAdjacentHTML("afterend", `<p> ${input}</p>`);
+    
+    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"> <div class="card"><h1> ${input}</h1>`)
 })

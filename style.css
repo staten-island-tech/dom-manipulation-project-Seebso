@@ -1,12 +1,20 @@
 .card{
     display: flex;
     flex-wrap: wrap;
-    height: 50vh;
-    width: 40vh;
+    height: 40vh;
+    width: 30vh;
     margin: 2.5rem 0;
     background-color: #cb8edd;
     align-items: center;
     display: flex;
     flex-direction:column;
     justify-content: space-between;
+}
+.container {
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #92e28f;
+    align-items: center;
+    justify-content: space-around;
 }
