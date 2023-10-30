@@ -8,7 +8,7 @@
     align-items: center;
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .container {
     margin: 1rem auto;
@@ -16,5 +16,5 @@
     flex-wrap: wrap;
     background-color: #92e28f;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
