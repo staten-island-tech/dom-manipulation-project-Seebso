@@ -5,7 +5,7 @@ money = 100
 while(money > 0)
     console.log("let it ride", money)
     money--; */
-const numsArr = [
+/* const numsArr = [
     1, 2, 3, 4, 5, 6, 7, 8, 9, 10
 ];
 function linearSearch(num, arr){
@@ -24,4 +24,4 @@ function linearSearch(num, arr){
     console.log(found);
     return found;
 }
-linearSearch(100, numsArr)
+linearSearch(100, numsArr) */
