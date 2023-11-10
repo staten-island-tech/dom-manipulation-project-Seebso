@@ -22,20 +22,15 @@ const DOMSelectors = {
 };
 
 DOMSelectors.button.addEventListener("click", function () {
-    
-
-    
     let input = DOMSelectors.formfirst.value;
-    
-    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"> <div class="card"><h1> ${input}</h1><button type="buttons" id="bt">remove</button>`)
+    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"> <div class="card"><h1> ${input}</h1><button type="button" class="btn">remove</button>`)
 })
 function remove() {
-    let buttons = document.querySelectorAll("butto");
-    buttons.forEach((bt) => 
-        DOMSelectors.bt.addEventListener("click", function () {
-            console.log("whaet");
+    let buttons = document.querySelectorAll(".btn");
+    buttons.forEach((btn) => 
+        btn.addEventListener("click", function () {
+            console.log("e")
         })
     );
 }
-
 remove();
