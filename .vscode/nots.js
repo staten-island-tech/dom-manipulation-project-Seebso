@@ -24,5 +24,4 @@ function linearSearch(num, arr){
     console.log(found);
     return found;
 }
-linearSearch(100, numsArr)clic.target.parentElement.buttons */
-`const scard = event.target.parentElement.remove`
+linearSearch(100, numsArr) */
