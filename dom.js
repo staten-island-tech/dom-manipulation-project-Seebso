@@ -13,24 +13,31 @@
     /* console.log(DOMSelectors.firstname.value */
 const DOMSelectors = {
   button: document.getElementById("btn"),
-  buttons: document.getElementById("bt"),
+  buttons: document.getElementById("btn"),
   text: document.querySelector("#text"),
   points: document.querySelectorAll(".point"),
   card: document.getElementById("an"),
   stuff: document.getElementById("firstname"),
   formfirst: document.querySelector(`#formfirst`),
+  input: document.querySelector('.inp')
 };
 
 DOMSelectors.button.addEventListener("click", function () {
     let input = DOMSelectors.formfirst.value;
     DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"> <div class="card"><h1> ${input}</h1><button type="button" class="btn">remove</button>`)
+    clear();
 })
 function remove() {
     let buttons = document.querySelectorAll(".btn");
     buttons.forEach((btn) => 
-        btn.addEventListener("click", function () {
+        btn.addEventListener("click",  (clic) => {
+            clic.target.parentElement.buttons
             console.log("e")
         })
     );
 }
+function clear(){
+    DOMSelectors.input.value="";
+}
+`const scard = event.target.parentElement.remove`
 remove();
