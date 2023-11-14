@@ -11,6 +11,11 @@
         );
     }); */
     /* console.log(DOMSelectors.firstname.value */
+DOMSelectors.button.addEventListener("click", function () {
+    let input = DOMSelectors.formfirst.value;
+    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"><div class="card"><h1> ${input}</h1><button type="button"class="but">remove</button>`)
+    clear();
+    })
 const DOMSelectors = {
   button: document.getElementById("btn"),
   buttons: document.getElementById("btn"),
@@ -19,19 +24,15 @@ const DOMSelectors = {
   card: document.getElementById("an"),
   stuff: document.getElementById("firstname"),
   formfirst: document.querySelector(`#formfirst`),
-  input: document.querySelector('.inp')
+  input: document.querySelector('.inp'),
+  buto: document.querySelector('.but'),
 };
 
-DOMSelectors.button.addEventListener("click", function () {
-    let input = DOMSelectors.formfirst.value;
-    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"> <div class="card"><h1> ${input}</h1><button type="button" class="btn">remove</button>`)
-    clear();
-})
 function remove() {
-    let buttons = document.querySelectorAll(".btn");
-    buttons.forEach((btn) => 
-        btn.addEventListener("click",  (clic) => {
-            clic.target.parentElement.buttons
+    let buto = document.querySelectorAll(".but");
+    buto.forEach((but) => 
+        but.addEventListener("click",  (clic) => {
+            clic.target.parentElement.buto
             console.log("e")
         })
     );
