@@ -21,20 +21,20 @@ const DOMSelectors = {
   stuff: document.getElementById("firstname"),
   formfirst: document.querySelector(`#formfirst`),
   input: document.querySelector('.inp'),
-  buto: document.querySelector('.but'),
+  buto: document.querySelector('.container'),
 };
 function remove() {
     let buto = document.querySelectorAll(".but");
     buto.forEach((but) => 
         but.addEventListener("click",  (clic) => {
-            clic.target.parentElement.buto();
+            clic.currentTarget.parentNode.remove();
             console.log("e")
         })
     );
 }
 DOMSelectors.button.addEventListener("click", function () {
     let input = DOMSelectors.formfirst.value;
-    DOMSelectors.card.insertAdjacentHTML("afterend",`<div class="container"><div class="card"><h1> ${input}</h1><button type="button"class="but">remove</button>`)
+    DOMSelectors.buto.insertAdjacentHTML("afterend",`<div class="card"><h1> ${input}</h1><button type="button"class="but">remove</button></div>`)
     clear();
     remove();
 })
