@@ -1,6 +1,5 @@
 .card{
-    display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     height: 40vh;
     width: 30vh;
     margin: 2.5rem 0;

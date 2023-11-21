@@ -21,7 +21,7 @@ const DOMSelectors = {
   stuff: document.getElementById("firstname"),
   formfirst: document.querySelector(`#formfirst`),
   input: document.querySelector('.inp'),
-  buto: document.querySelector('.container'),
+  buto: document.querySelector('#container'),
 };
 function remove() {
     let buto = document.querySelectorAll(".but");
@@ -34,7 +34,7 @@ function remove() {
 }
 DOMSelectors.button.addEventListener("click", function () {
     let input = DOMSelectors.formfirst.value;
-    DOMSelectors.buto.insertAdjacentHTML("afterend",`<div class="card"><h1> ${input}</h1><button type="button"class="but">remove</button></div>`)
+    DOMSelectors.buto.card.insertAdjacentHTML("beforeend",`<div class="card"><h1> ${input}</h1><button type="button"class="but">remove</button></div>`)
     clear();
     remove();
 })
