@@ -22,7 +22,6 @@ const DOMSelectors = {
   formfirst: document.querySelector(`#formfirst`),
   input: document.querySelector('.inp'),
   cont: document.querySelector('.container'),
-  cards: document.querySelector('.cards'),
 };
 function remove() {
     let buto = document.querySelectorAll(".but");
