@@ -28,7 +28,6 @@ function remove() {
     buto.forEach((but) => 
         but.addEventListener("click",  (clic) => {
             clic.currentTarget.parentNode.remove();
-            console.log("e")
         })
     );
 }
